@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Elige tu lección</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#222;color:#fff;padding:4.5rem 1rem 2rem 1rem;}
+    header{position:fixed;top:0;left:0;width:100%;background:#000;padding:.6rem 0;text-align:center;font-size:1.4rem;font-weight:bold;z-index:10;}
+    h2{text-align:center;margin-bottom:1.5rem;font-size:2rem;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;max-width:1000px;margin:auto;}
+    .card{background:#333;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform .3s,box-shadow .3s;text-align:center;}
+    .card:hover{transform:translateY(-5px);box-shadow:0 8px 18px rgba(0,0,0,.6);}
+    .card img{width:100%;height:200px;object-fit:cover;display:block;}
+    .card p{padding:.8rem 1rem;font-size:1.1rem;margin:0;}
+    .btn-largo{display:block;width:100%;max-width:600px;margin:2.5rem auto 0 auto;background:#ff6600;color:#fff;text-align:center;padding:1rem;font-size:1.2rem;border:none;border-radius:8px;cursor:pointer;transition:background .3s;}
+    .btn-largo:hover{background:#ff8533;}
+  </style>
+</head>
+<body>
+  <header>Joa pro</header>
+  <h2>Elige tu lección</h2>
+
+  <div class="grid">
+    <div class="card" onclick="location.href='pro.html'">
+      <img src="https://via.placeholder.com/400x300/0066CC/FFFFFF?text=👑+Cómo+ser+pro" alt="Cómo ser pro">
+      <p>Cómo ser pro</p>
+    </div>
+
+    <div class="card" onclick="location.href='hijo.html'">
+      <img src="https://via.placeholder.com/400x300/FFCC00/000000?text=👶+Como+hacer+que+alguien+sea+tu+hijo" alt="Cómo Hacer que alguien sea tu hijo">
+      <p>Cómo Hacer que alguien sea tu hijo</p>
+    </div>
+
+    <div class="card" onclick="location.href='ganar16.html'">
+      <img src="https://via.placeholder.com/400x300/FF66CC/FFFFFF?text=16-0+Cómo+ganar+por+16" alt="Cómo ganar por 16">
+      <p>Cómo ganar por 16</p>
+    </div>
+
+    <div class="card" onclick="location.href='kethyan.html'">
+      <img src="https://via.placeholder.com/400x300/CC0000/FFFFFF?text=🐀+Qué+hacer+si+eres+Kethyan" alt="Qué hacer si eres Kethyan">
+      <p>Qué hacer si eres Kethyan</p>
+    </div>
+  </div>
+
+  <button class="btn-largo" onclick="location.href='instrucciones.html'">
+    Instrucciones del grupo de primos
+  </button>
+</body>
+</html>
